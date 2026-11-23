@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Портфолио | Уалиев Алихан</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080a0f;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 9%;
+    background: #0d1018;
+    border-bottom: 1px solid #202431;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #5685ff;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #5685ff;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10%;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.label {
+    color: #5685ff;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(40px, 6vw, 68px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #5685ff;
+}
+
+.hero-text p {
+    color: #999;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 28px;
+    background: #5685ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #3869e6;
+    transform: translateY(-3px);
+}
+
+.photo {
+    width: 310px;
+    height: 390px;
+    background: #151b2a;
+    border: 1px solid #5685ff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #5685ff;
+    font-size: 16px;
+    box-shadow: 0 0 50px #5685ff18;
+    flex-shrink: 0;
+}
+
+section {
+    padding: 85px 10%;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.section-title span {
+    color: #5685ff;
+}
+
+.about-box {
+    background: #10141f;
+    border: 1px solid #222a3b;
+    border-radius: 15px;
+    padding: 35px;
+    color: #aaa;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #10141f;
+    padding: 30px;
+    border: 1px solid #222a3b;
+    border-radius: 14px;
+    transition: .3s;
+}
+
+.card:hover {
+    border-color: #5685ff;
+    transform: translateY(-5px);
+}
+
+.card .number {
+    color: #5685ff;
+    font-size: 14px;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+.card p {
+    color: #999;
+    line-height: 1.6;
+}
+
+.hobbies {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hobby {
+    background: #10141f;
+    border: 1px solid #222a3b;
+    padding: 25px 35px;
+    border-radius: 12px;
+    font-size: 17px;
+    transition: .3s;
+}
+
+.hobby:hover {
+    border-color: #5685ff;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #0d1018;
+    color: #777;
+    border-top: 1px solid #202431;
+}
+
+@media(max-width: 750px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .photo {
+        width: 240px;
+        height: 290px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 60px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">УАЛИЕВ <span>АЛИХАН.</span></div>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#hobby">Интересы</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+
+    <div class="hero-text">
+        <div class="label">ЛИЧНОЕ ПОРТФОЛИО / 2026</div>
+
+        <h1>Привет, я<br><span>Уалиев Алихан</span></h1>
+
+        <p>
+            Студент, 16 лет. Изучаю программирование,
+            графический дизайн и современные технологии.
+        </p>
+
+        <a href="#about" class="btn">Подробнее обо мне ↗️</a>
+    </div>
+
+</div>
+
+<section id="about">
+    <h2 class="section-title">Обо <span>мне.</span></h2>
+
+    <div class="about-box">
+        Меня зовут Уалиев Алихан. Мне 16 лет, я студент
+        и учусь на программиста. Интересуюсь IT,
+        графическим дизайном и созданием цифровых проектов.
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Мои <span>навыки.</span></h2>
+
+    <div class="skills">
+
+        <div class="card">
+            <div class="number">01 / DESIGN</div>
+            <h3>Figma</h3>
+            <p>Создание интерфейсов, прототипов и дизайна сайтов.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">02 / GRAPHICS</div>
+            <h3>Adobe Illustrator</h3>
+            <p>Векторная графика, иллюстрации и логотипы.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">03 / DESIGN</div>
+            <h3>CorelDRAW</h3>
+            <p>Графическое оформление и рекламные материалы.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="hobby">
+    <h2 class="section-title">Мои <span>интересы.</span></h2>
+
+    <div class="hobbies">
+        <div class="hobby">⚽ Спорт</div>
+        <div class="hobby">🎵 Музыка</div>
+        <div class="hobby">🎮 Видеоигры</div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Уалиев Алихан. Все права защищены.</p>
+    <p style="margin-top:10px;">Личное портфолио студента</p>
+</footer>
+
+</body>
+</html>
